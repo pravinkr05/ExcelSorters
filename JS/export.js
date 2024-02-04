@@ -139,8 +139,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         displayData(excelData);
 
-         // Populate sort column dropdown
-        populateColumnDropdown(columnSelect, data[0]);
+        // Populate sort column dropdown
+        populateColumnDropdown(columnSelect, excelData[0]);
+
+        // Populate preference columns dropdown
+        populateColumnDropdown(shuffleColumnsSelect, excelData[0], true);
     }
 
 
