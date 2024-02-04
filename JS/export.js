@@ -138,6 +138,9 @@ document.addEventListener('DOMContentLoaded', function () {
         excelData = addEmptyColumnToSheet(excelData, columnName);
 
         displayData(excelData);
+
+         // Populate sort column dropdown
+        populateColumnDropdown(columnSelect, data[0]);
     }
 
 
