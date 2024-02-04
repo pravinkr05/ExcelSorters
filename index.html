@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Sorter</title>
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+
+    <div class="navbar">
+      <a href="index.html">Excel Sorter</a> 
+      
+
+      <a href="html/exportDataset.html">Excel Dataset Generator</a>
+      <a href="#">Services</a>
+      <a href="html/contact.html">Contact us</a>
+    </div>
+  
+    <div class="cont">
+      <h1>Excel Sorter</h1>
+      <span>Step-1 : </span>
+      <input type="file" id="fileInput" accept=".xls, .xlsx" />
+      <br />
+      <hr />
+      <span>Step-2 : </span>
+      <label for="column">Select column for sorting:</label>
+      <select id="columnSelect"></select>
+
+      <br />
+      <hr />
+      <span>Step-3 : </span>
+      <button id="myButton2" onclick="sortAndDownload()">Sort It</button>
+      <button onclick="downloadData2()">download Subjects</button>
+
+      <br />
+      <hr />
+      <span>Step-4 : </span>
+      <label for="column">Select a column for showing results:</label>
+      <select id="resultColumnSelect"></select>
+
+      <br />
+      <hr />
+      <span id="column"
+        >Step-6 :
+        <label for="column">Select all prferenced subjects:</label></span
+      >
+      <select id="preferenceColumnsSelect" multiple></select>
+
+      <br />
+      <hr />
+      <span>Step-7 : </span>
+      <label for="studentsPerSubject"
+        >No. of Max Students for Each Subject:</label
+      >
+      <input type="number" id="studentsPerSubject" min="1" value="1" />
+      <br />
+      <hr />
+
+      <span>Step-8 : </span>
+      <button id="myButton" onclick="allocatedSubjects()">
+        Allocate Subjects
+      </button>
+      <button onclick="downloadData()">download Subjects</button>
+      <br />
+<hr>
+<p>Excel sheet shown :</p>
+    <table id="dataTable"></table>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+    <script src="/JS/nav.js"></script>
+  </body>
+</html>

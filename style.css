@@ -1,0 +1,63 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    background: white;
+}
+
+.cont {
+    border: 1px solid rgba(76, 0, 255, 0.671);
+    max-height: 80vh;
+    border-radius: 5px;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: smaller;
+    overflow-y: scroll;
+}
+
+
+#column {
+    position: relative;
+    bottom: 25px;
+}
+
+#studentsPerSubject {
+    width: 80px;
+}
+
+#dataTable {
+
+    /* max-width: 50%; */
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: rgb(209, 205, 205);
+    margin: auto;
+}
+
+#dataTable th,
+#dataTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#dataTable th {
+    background-color: #f2f2f2;
+}
+
+#dataTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#dataTable tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#dataTable tbody tr:hover {
+    background-color: #d3d3d3;
+}

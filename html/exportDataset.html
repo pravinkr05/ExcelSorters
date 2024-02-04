@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Sorter</title>
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+
+    <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+
+    <div class="navbar">
+        <a href="/index.html">Excel Sorter</a> 
+        <a href="exportDataset.html">Excel Dataset Generator</a>
+        <a href="#">Services</a>
+        <a href="/html/contact.html">Contact us</a>
+      </div>
+
+ 
+    <div class="cont">
+      <h1>Excel Dataset Generator</h1>
+      <span>Step-1 : </span>
+      <input type="file" id="fileInput" accept=".xls, .xlsx" />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <span>Step-2 : </span>
+      <label for="columnName">To add new column, Enter Column Name:</label>
+      <input type="text" id="columnName" name="columnName" required />
+      <button type="button" onclick="addNewColumn()">Add Column</button>
+      <button onclick="downloadData()">download it</button>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <span>Step-3 : </span>
+
+      <label for="column">(If you want) Select a column to set random values between min and max:</label>
+      <select id="columnSelect"></select>
+      <br />
+      <br />
+      <label for="minValue">Enter Min Value :</label>
+      <input type="number" id="minValue" name="minValue" required />
+      &nbsp;
+      <label for="maxValue">Enter Max Value:</label>
+      <input type="number" id="maxValue" name="maxValue" required />
+
+      <button type="button" onclick="randomizeColumn()">
+        Randomize Column
+      </button>
+      <button onclick="downloadData()">download it</button>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <span id="column"
+        >Step-4 :
+        <label for="column"
+          >Select multiple columns for shuffle their data:</label
+        ></span
+      >
+      <select id="shuffleColumnsSelect" multiple></select>
+      <br />
+      <button id="myButton" onclick="shuffledSubjects()">Shuffled it</button>
+      <button onclick="downloadData()">download it</button>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+      <p>Excel sheet shown :</p>
+      <table id="dataTable"></table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="xlsx.full.min.js"></script>
+    <script src="/JS/export.js"></script>
+    <script src="/JS/nav.js"></script>
+  </body>
+</html>

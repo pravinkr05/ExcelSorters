@@ -1,0 +1,64 @@
+
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    /* background-color: #f4f4f4; */
+    font-size: 0.9em;
+  }
+
+  .navbar {
+    background-color: #000000;
+    
+    padding: 15px;
+    width: 140px;
+    height: 100%;
+    position: fixed;
+    left: -200px; /* Move the navbar off-screen initially */
+    top: 0;
+    overflow-y: auto;
+    transition: left 1s; /* Add a transition effect for smooth sliding */
+    transition: right 1s;
+    border-radius: 10px;
+
+  }
+
+  .navbar a {
+    background-color: rgba(64, 64, 194, 0.699);
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: #949494;
+    
+  }
+
+  .content {
+    margin-left: 0; /* Adjust the left margin based on the navbar width */
+    transition: margin-left 1s; /* Add a transition effect for smooth sliding */
+  }
+
+  .navbar-toggle {
+    position: fixed;
+    left: 5px;
+    top: 265px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #a8a3a3;
+    color: rgb(0, 0, 0);
+  
+    border: none;
+    outline: none;
+  }
+  .navbar-toggle:hover {
+    background-color: #000000;
+    color: rgb(185, 184, 184);
+  }
+  
