@@ -1,5 +1,5 @@
 
-# Open Elective Subject Allocation System - Excel sheet modifier website
+# Open Elective Subject Allocation System - Excel sheet modifier website 
 
 ## Introduction
 During the open elective subject allocation at our institute, there were 1000 student records stored in an Excel sheet. Each student could select up to 10 subjects, with each subject having a maximum capacity of 60 students. The allocation process was based on the student's CGPA, starting with the student with the highest CGPA.
